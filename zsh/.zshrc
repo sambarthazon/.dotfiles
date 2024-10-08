@@ -133,3 +133,4 @@ alias cd="z"
 eval "$(zoxide init zsh)"
 
 alias vim="nvim"
+alias mytex="~/.dotfiles/tex/mytex.sh"
