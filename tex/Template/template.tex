@@ -1,51 +1,12 @@
-% ------------------------- START INCLUDE PART ------------------------- %
-\documentclass{article}
-
-% --------------------------------------------------
-\usepackage[a4paper,left=1cm, right=1cm, top=1.5cm, bottom=1.5cm]{geometry} % Set geometry of the sheet
+\documentclass{article} % Set the document type
 
 
 
-% --------------------------------------------------
-% See:  https://www.overleaf.com/learn/latex/International_language_support
-\usepackage[french]{babel} % Set language of file
-\usepackage[utf8]{inputenc} % Set encode type
-\usepackage[T1]{fontenc} % Set encode type
+% ------------------------- START PREAMBLE PART ------------------------- %
 
+\usepackage{preamble} % Group all include package
 
-
-% --------------------------------------------------
-% See:  https://www.overleaf.com/learn/latex/Aligning_equations_with_amsmath
-%       https://www.overleaf.com/learn/latex/Matrices
-\usepackage{amsmath} % Additionnal tools for math features
-
-
-
-% --------------------------------------------------
-% See:  https://www.overleaf.com/learn/latex/Inserting_Images
-\usepackage{graphicx} % Enable images insertion
-\graphicspath{ {./images/}{./figures/} } % Set path of images
-\DeclareGraphicsExtensions{.png,.pdf} % Available type in the document (higher priority, ..., lower priority)
-\usepackage{wrapfig} % Enable wrapping images
-%\usepackage[rightcaption]{sidecap} % Shift the caption to the parameter side (rightcaption, leftcaption, outercaption, innercaption)
-
-
-
-% --------------------------------------------------
-% See:  https://www.overleaf.com/learn/latex/Hyperlinks
-\usepackage{hyperref}
-% Setup to change colors of hyperlink
-% \hypersetup {
-%   colorlinks=true, % Link will be colored (default: red)
-%   linkcolor=blue, % Set internal link color
-%   filecolor=magenta, % Set file link color
-%   urlcolor=cyan, % Set url link color
-%
-%   pdfpagemode=FullScreen, % Open pdf in full screen
-% }
-
-% ------------------------- END INCLUDE PART ------------------------- %
-
+% ------------------------- END PREAMBLE PART ------------------------- %
 
 
 
@@ -55,6 +16,11 @@
 
 \listoffigures % Figure's caption mandatory
 \listoftables
+
+$\begin{bmatrix}
+  1 & 2 & 3\\
+  4 & 5 & 6
+\end{bmatrix}$
 
 \end{document}
 
