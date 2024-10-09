@@ -37,7 +37,7 @@ generate_file() {
   return 0
 }
 
-while getopts ':hf:p:' OPTION; do
+while getopts ':hf:p:c:g:' OPTION; do
   case "$OPTION" in
     h)
       show_help;;
