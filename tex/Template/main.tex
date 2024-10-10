@@ -4,9 +4,11 @@
 
 % ------------------------- START PREAMBLE PART ------------------------- %
 % You can check or modify the "preamble.sty" in order to see or add packages
+% You can check or modify the "commands.sty" in order to see or add commands
 % You can check or modify the "cheatsheet.tex" in order to see or add reminders
 
 \usepackage{preamble} % Group all include package
+\usepackage{commands} % Group all commands
 
 % ------------------------- END PREAMBLE PART ------------------------- %
 
@@ -14,13 +16,10 @@
 
 % ------------------------- START DOCUMENT PART ------------------------- %
 
-\title{Title}
-\author{Firstname Lastname}
-\date{\today}
-
 \begin{document}
 
-\maketitle % Print the header
+% Display the custom front page
+\myfrontpage{Name}{University}{ID}{TITLE OF THE DOCUMENT}{TOPIC}
 
 \clearpage
 

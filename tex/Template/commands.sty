@@ -1,0 +1,14 @@
+\ProvidesPackage{commands} % Create the commands as package
+
+\newcommand{\myfrontpage}[5] {
+  \begingroup
+  \centering
+  #1 \hfill #2 \hfill #3\\
+  \vfill
+  {\LARGE #4}\\
+  \vspace{1cm}
+  {\LARGE #5}\\
+  \vfill
+  \today
+  \endgroup
+}
