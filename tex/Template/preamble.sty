@@ -5,18 +5,18 @@
 % See:  https://www.overleaf.com/learn/latex/Articles/A_visual_guide_to_LaTeX%E2%80%99s_page_layout_parameters
 % See:  https://www.overleaf.com/learn/latex/Headers_and_footers
 \usepackage[a4paper,
-            left=1.5cm, right=1.5cm, top=2cm, bottom=2cm,
-            includehead, headheight=10mm
+            left=1.5cm, right=1.5cm, top=2cm, bottom=2cm, % Set the margins
+            includehead, headheight=15pt % Set the header height (15pt is the minimum)
            ]{geometry} % Set geometry of the sheet
 \usepackage{fancyhdr} % Customize header and footer
 \thispagestyle{plain} % Set the page style for the first page
 \pagestyle{fancy} % Set the page style for all other pages
 \fancyhead{} % clear all header fields
-\fancyhead[L]{First name, Last name} % Set Left side of header
-\fancyhead[C]{Topic} % Set Center side of header
-\fancyhead[R]{ID} % Set Right side of header
+\fancyhead[L]{First name, Last name \vspace{1mm}} % Set Left side of header
+\fancyhead[C]{Topic \vspace{1mm}} % Set Center side of header
+\fancyhead[R]{ID \vspace{1mm}} % Set Right side of header
 \fancyfoot{} % clear all footer fields
-\fancyfoot[LE,RO]{\thepage} % Set Left side on Even page and Right side on Odd page
+\fancyfoot[LE,RO]{\vspace{2mm} \thepage} % Set Left side on Even page and Right side on Odd page
 
 
 
