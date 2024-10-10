@@ -1,13 +1,13 @@
 #! /bin/sh
 
 template_path=~/.dotfiles/tex/Template/
-template_file=template.tex
+template_file=main.tex
 
 show_help() {
   echo "Usage: ./$(basename $0) [-h] [-f filename] [-p path] [-c filename] [-g filename]"
   echo "Options:"
   echo "  -h            Display this message"
-  echo "  -f            Create new tex file based on template.tex"
+  echo "  -f            Create new tex file based on main.tex"
   echo "  -p            Create new tex project based on Template project"
   echo "  -c            Compile the latex file"
   echo "  -g            Generate pdf file for the latex file"
