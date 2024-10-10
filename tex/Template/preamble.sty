@@ -3,7 +3,19 @@
 % ------------------------- START PREAMBLE PART ------------------------- %
 % --------------------------------------------------
 % See:  https://www.overleaf.com/learn/latex/Articles/A_visual_guide_to_LaTeX%E2%80%99s_page_layout_parameters
-\usepackage[a4paper,left=1cm, right=1cm, top=1.5cm, bottom=1.5cm]{geometry} % Set geometry of the sheet
+\usepackage[a4paper,
+            left=1.5cm, right=1.5cm, top=2cm, bottom=2cm,
+            includehead, headheight=10mm
+           ]{geometry} % Set geometry of the sheet
+\usepackage{fancyhdr} % Customize header and footer
+\thispagestyle{plain} % Set the page style for the first page
+\pagestyle{fancy} % Set the page style for all other pages
+\fancyhead{} % clear all header fields
+\fancyhead[L]{First name, Last name} % Set Left side of header
+\fancyhead[C]{Topic} % Set Center side of header
+\fancyhead[R]{ID} % Set Right side of header
+\fancyfoot{} % clear all footer fields
+\fancyfoot[LE,RO]{\thepage} % Set Left side on Even page and Right side on Odd page
 
 
 
