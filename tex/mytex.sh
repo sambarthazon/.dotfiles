@@ -28,12 +28,12 @@ create_project() {
 }
 
 compile_file() {
-  latex ${1} && echo "Latex file compiled."
+  latex --output-directory=build ${1} && echo "Latex file compiled."
   return 0
 }
 
 generate_file() {
-  pdflatex ${1} && echo "PDF generated."
+  pdflatex --output-directory=build ${1} && echo "PDF generated."
   return 0
 }
 
